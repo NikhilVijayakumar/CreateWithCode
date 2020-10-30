@@ -633,6 +633,11 @@ PrefabInstance:
       propertyPath: m_Constraints
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 867988768283731352, guid: e398bd0508c51f947a1da50f86b80249,
+        type: 3}
+      propertyPath: m_Mass
+      value: 60
+      objectReference: {fileID: 0}
     - target: {fileID: 867988768567304236, guid: e398bd0508c51f947a1da50f86b80249,
         type: 3}
       propertyPath: m_ApplyRootMotion
