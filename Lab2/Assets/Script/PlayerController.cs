@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     private float leftBound = 21.5f;
     private float rightBound = -20.1f;
     private float rebound = 15.1f;
+    private bool hasPowerups = false;
 
     private Rigidbody playerRB;
 
@@ -60,5 +61,22 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Powerups"))
+        {
+            Destroy(other.gameObject);
+            hasPowerups = true;
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            //collide with enemy
+        }
+    }
+
+
 }
